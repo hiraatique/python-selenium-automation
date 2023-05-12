@@ -1,6 +1,11 @@
 # Created by hiraatique at 5/11/23
-Feature: # Enter feature name here
-  # Enter feature description here
+Feature: Amazon sign-in page
 
-  Scenario: # Enter scenario name here
-    # Enter steps here
+  Scenario: Logged out user directed to sign-in page when clicking on Returns and Orders
+    Given Open amazon page
+    When Click on orders
+    When Verify sign-in header
+    Then Verify input field is present
+
+
+
