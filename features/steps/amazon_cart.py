@@ -3,10 +3,6 @@ from behave import given, when, then
 from time import sleep
 
 
-@given('Open amazon page')
-def open_amazon(context):
-    context.driver.get('https://www.amazon.com')
-
 
 @when('Click on cart icon')
 def click_cart(context):
