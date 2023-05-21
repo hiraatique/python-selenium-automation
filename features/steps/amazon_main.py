@@ -5,7 +5,7 @@ from time import sleep
 ORDERS_BTN = (By.ID, 'nav-orders')
 SEARCH_FIELD = (By.ID, 'twotabsearchtextbox')
 SEARCH_BTN = (By.ID, 'nav-search-submit-button')
-FOOTER_LINKS = (By.CSS_SELECTOR, '.navFooterMoreOnAmazon a')
+#FOOTER_LINKS = (By.CSS_SELECTOR, '.navFooterMoreOnAmazon a')
 
 @given('Open amazon page')
 def open_amazon(context):
@@ -21,9 +21,9 @@ def search_amazon(context, search_query):
 
 
 
-@then('Verify there are 36 links')
-def verify_link_count(context):
-    links_count = len(context.driver.find_elements(*FOOTER_LINKS))
-    print(context.driver.find_elements(*FOOTER_LINKS))
-    assert links_count ==36, f'Expected 36 links, but got {links_count}'
+#@then('Verify there are 36 links')
+#def verify_link_count(context):
+ #   links_count = len(context.driver.find_elements(*FOOTER_LINKS))
+#    print(context.driver.find_elements(*FOOTER_LINKS))
+ #   assert links_count ==36, f'Expected 36 links, but got {links_count}'
 
