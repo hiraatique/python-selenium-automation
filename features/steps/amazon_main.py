@@ -7,6 +7,7 @@ SEARCH_FIELD = (By.ID, 'twotabsearchtextbox')
 SEARCH_BTN = (By.ID, 'nav-search-submit-button')
 #FOOTER_LINKS = (By.CSS_SELECTOR, '.navFooterMoreOnAmazon a')
 
+
 @given('Open amazon page')
 def open_amazon(context):
     context.app.main_page.open_main_page()
